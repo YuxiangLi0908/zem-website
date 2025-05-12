@@ -1,0 +1,57 @@
+<!-- footer -->
+<div class="footer"> 
+	<!-- container -->
+	<div class="container">
+		<div class="col-md-6 footer-left  wow fadeInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+			<ul>
+			{pboot:nav}
+				<li class="hvr-sweep-to-bottom"><a href="[nav:link]">[nav:name]</a></li>
+			{/pboot:nav}
+			</ul>
+			<form action="{pboot:form fcode=3}"  method="post">
+				<input type='text' name='mail' id='mail' placeholder="您的邮箱" required value='' />
+				<input type="submit" value="订阅">
+			</form>
+		</div>
+		<div class="col-md-3 footer-middle wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+			<h3>联系我们</h3>
+			<div class="address"><p>{pboot:companyaddress}</p></div>
+			<div class="phone"><p>{pboot:companyphone}</p></div>
+		</div>
+		<div class="col-md-3 footer-right  wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+			<a href="{pboot:sitepath}/"><img src="{pboot:sitelogo}" alt="{pboot:companyname}" /></a>
+			<p>{pboot:content scode=1}[content:content drophtml=1 len=120]{/pboot:content}</p>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<!-- //container --> 
+</div>
+<!-- //footer -->
+<div class="copyright"> 
+	<!-- container -->
+	<div class="container">
+		<div class="copyright-left wow fadeInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+			<p>{pboot:sitecopyright}</p>
+		</div>
+		<div class="copyright-right wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+			<ul>
+				<li><a href="#" class="twitter"> </a></li>
+				<li><a href="#" class="twitter facebook"> </a></li>
+				<li><a href="#" class="twitter chrome"> </a></li>
+				<li><a href="#" class="twitter pinterest"> </a></li>
+				<li><a href="#" class="twitter linkedin"> </a></li>
+				<li><a href="#" class="twitter dribbble"> </a></li>
+			</ul>
+		</div>
+		<div class="clearfix"> </div>
+		<script type="text/javascript">
+			$(document).ready(function() {
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			});
+		</script> 
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+	<!-- //container --> 
+</div>
+</body>
+</html>

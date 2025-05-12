@@ -1,0 +1,27 @@
+{include file=header.html}
+    <!-- products-top -->
+    <div class="products-top">
+        <!-- container -->
+        <div class="container">
+            <h3 class="wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">服务</h3>
+            <h5 class="wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">{pboot:sitetitle}</span></h5>
+            <div class="products-top-grids wow fadeInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;"> 
+              {pboot:list num=6 order=sorting}
+                <div class="col-md-4 products-grid">
+                    <div class="products-number">
+                        <p>[list:i].</p>
+                    </div>
+                    <div class="products-text">
+                        <h4><a href="[list:link]">[list:title]</a></h4>
+                        <p>[list:description len=38]</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                {/pboot:list}
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <!-- container -->
+    </div>
+    <!-- //products-top -->
+{include file=footer.html}

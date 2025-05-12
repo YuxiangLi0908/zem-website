@@ -1,0 +1,31 @@
+   {include file=header.html}
+    <!--single_page -->
+    <div class="container">
+        <div class="single wow fadeInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+            <div class="blog-to">
+                <div class="blog-top">
+                    <div class="blog-left"> <b>{content:date style=d}</b> <span>{content:date style=Y-m}</span> </div>
+                    <div class="top-blog">
+                        <h1>{content:title}</h1>
+                        <p>责任编辑：{content:author}&nbsp; 文章来源：{content:source} </p>
+                        <p class="sed">{content:content}</p>
+                        <div class="col-md-6 md-in">
+                            <ul class="grid-part">
+                                <li>上一条：{content:precontent} </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 md-in">
+                            <ul class="grid-part">
+                                <li>下一条：{content:nextcontent} </li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //single_page -->
+    {include file=footer.html}
+

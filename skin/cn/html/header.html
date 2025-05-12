@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{pboot:pagetitle}</title>
+<meta name="keywords" content="{pboot:pagekeywords}" />
+<meta name="description" content="{pboot:pagedescription}" />
+<script type="application/x-javascript">
+    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+
+    function hideURLbar() { window.scrollTo(0, 1); }
+</script>
+<link href="{pboot:sitetplpath}/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="{pboot:sitetplpath}/css/style.css" type="text/css" media="all" />
+<script src="{pboot:sitetplpath}/js/jquery-1.11.1.min.js"></script>
+<link href='{pboot:sitetplpath}/css/font.css' rel='stylesheet' type='text/css'>
+<link href="{pboot:sitetplpath}/css/animate.css" rel="stylesheet" type="text/css" media="all">
+<script src="{pboot:sitetplpath}/js/wow.js"></script>
+<script>new WOW().init();</script>
+<!--start-smoth-scrolling-->
+<script type="text/javascript" src="{pboot:sitetplpath}/js/move-top.js"></script>
+<script type="text/javascript" src="{pboot:sitetplpath}/js/easing.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event) {
+            event.preventDefault();
+            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 900);
+        });
+	});
+</script>
+<!--start-smoth-scrolling-->
+</head>
+
+<body>
+    <div id="home" class="banner a-banner">
+        <!-- container -->
+        <div class="container">
+            <div class="header">
+                <div class="head-logo"> <a href="{pboot:sitepath}/"><img src="{pboot:sitelogo}" alt="{pboot:companyname}" /></a> </div>
+                <div class="top-nav"> <span class="menu"><img src="{pboot:sitetplpath}/images/menu.png" alt="{pboot:companyname}"></span>
+                    <ul class="nav1">
+                        <li class="hvr-sweep-to-bottom"><a href="{pboot:sitepath}/">首页<i><img src="{pboot:sitetplpath}/images/nav-but0.png" alt="首页" /></i></a></li>
+                        {pboot:nav}
+                        <li class="hvr-sweep-to-bottom"><a href="[nav:link]">[nav:name]<i><img src="{pboot:sitetplpath}/images/nav-but[nav:i].png" alt="[nav:name]" /></i></a></li>
+                        {/pboot:nav}
+                        <div class="clearfix"> </div>
+                    </ul>
+                    <!-- script-for-menu -->
+                    <script>
+                    $("span.menu").click(function() {
+                        $("ul.nav1").slideToggle(300, function() {
+                            // Animation complete.
+                        });
+                    });
+                    </script>
+                    <!-- /script-for-menu -->
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <!-- //container -->
+    </div>

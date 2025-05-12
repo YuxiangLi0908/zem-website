@@ -1,0 +1,27 @@
+
+    {include file=header.html}
+    <!--blog -->
+    <div class="blog">
+        <div class="container">
+            <div class="single-inline wow fadeInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                {pboot:list num=6 order=date}
+                <div class="blog-to">
+                    <div class="blog-top">
+                        <div class="blog-left"> <b>[list:date style=d]</b> <span>[list:date style=Y-m]</span> </div>
+                        <div class="top-blog"> <a class="fast" href="[list:link]">[list:title]</a>
+                            <p class="sed">[list:description lench=30]</p>
+                            <a href="[list:link]" class="more">查看详细<span> </span></a>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                </div>
+                {/pboot:list}
+              </div>
+            <div class="pagex" style="text-align:center;">
+                <ul class="pagination">{page:bar}</ul>
+            </div>
+        </div>
+    </div>
+    <style>.page-num{padding: 6px}</style>
+    <!-- //blog -->
+    {include file=footer.html}
